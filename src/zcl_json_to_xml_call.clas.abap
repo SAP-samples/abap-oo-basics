@@ -1,0 +1,40 @@
+"! <p class="shorttext synchronized" lang="en">JSON To XML Conversion via Call Transformation</p>
+CLASS ZCL_JSON_TO_XML_CALL DEFINITION
+  PUBLIC
+  FINAL
+  CREATE PUBLIC .
+
+  PUBLIC SECTION.
+    INTERFACES IF_OO_ADT_CLASSRUN.
+  PROTECTED SECTION.
+  PRIVATE SECTION.
+ENDCLASS.
+
+
+
+CLASS ZCL_JSON_TO_XML_CALL IMPLEMENTATION.
+
+
+  METHOD IF_OO_ADT_CLASSRUN~MAIN.
+    DATA(JSON) = `{"TEXT":"JSON"}`.
+    CALL TRANSFORMATION ID SOURCE XML JSON
+                        RESULT XML DATA(XML).
+
+    TRY.
+        DATA(READER) = CL_SXML_STRING_READER=>CREATE( XML ).
+        DATA(WRITER) = CAST IF_SXML_WRITER(
+                              CL_SXML_STRING_WRITER=>CREATE( ) ).
+        WRITER->SET_OPTION( OPTION = IF_SXML_WRITER=>CO_OPT_LINEBREAKS ).
+        WRITER->SET_OPTION( OPTION = IF_SXML_WRITER=>CO_OPT_INDENT ).
+        READER->NEXT_NODE( ).
+        READER->SKIP_NODE( WRITER ).
+*       DATA(xml_output) = cl_abap_codepage=>convert_from( CAST cl_sxml_string_writer( writer )->get_output( ) ).
+        DATA(XML_OUTPUT) = CL_ABAP_CONV_CODEPAGE=>CREATE_IN(  )->CONVERT( CAST CL_SXML_STRING_WRITER( WRITER )->GET_OUTPUT( ) ).
+      CATCH CX_SXML_PARSE_ERROR.
+        RETURN.
+    ENDTRY.
+
+    OUT->WRITE( XML_OUTPUT ).
+
+  ENDMETHOD.
+ENDCLASS.

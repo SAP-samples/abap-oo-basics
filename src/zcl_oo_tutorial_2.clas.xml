@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_CLAS" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOCLASS>
+    <CLSNAME>ZCL_OO_TUTORIAL_2</CLSNAME>
+    <LANGU>E</LANGU>
+    <DESCRIPT>Flight Data as Static Methods</DESCRIPT>
+    <STATE>1</STATE>
+    <CLSCCINCL>X</CLSCCINCL>
+    <FIXPT>X</FIXPT>
+    <UNICODE>X</UNICODE>
+   </VSEOCLASS>
+   <DESCRIPTIONS>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_OO_TUTORIAL_2</CLSNAME>
+     <CMPNAME>CALCULATE_FLIGHT_PRICE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Calculate Flight Price</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_OO_TUTORIAL_2</CLSNAME>
+     <CMPNAME>GET_FLIGHT_DETAILS</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Get Booking Details</DESCRIPT>
+    </SEOCOMPOTX>
+   </DESCRIPTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>
