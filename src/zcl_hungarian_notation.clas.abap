@@ -24,7 +24,8 @@ ENDCLASS.
 
 
 
-CLASS zcl_hungarian_notation IMPLEMENTATION.
+CLASS ZCL_HUNGARIAN_NOTATION IMPLEMENTATION.
+
 
   METHOD if_oo_adt_classrun~main.
 
@@ -55,12 +56,13 @@ CLASS zcl_hungarian_notation IMPLEMENTATION.
 
   ENDMETHOD.
 
+
   METHOD mu_export_flights.
     et_flights = git_flights.
   ENDMETHOD.
 
+
   METHOD get_flights.
     flights = me->flights.
   ENDMETHOD.
-
 ENDCLASS.

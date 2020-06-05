@@ -16,7 +16,9 @@ ENDCLASS.
 
 
 
-CLASS zcl_fs_ref_perf_testing IMPLEMENTATION.
+CLASS ZCL_FS_REF_PERF_TESTING IMPLEMENTATION.
+
+
   METHOD if_oo_adt_classrun~main.
     DO 1000 TIMES.
       SELECT * FROM /dmo/flight APPENDING TABLE @flights.
@@ -27,22 +29,6 @@ CLASS zcl_fs_ref_perf_testing IMPLEMENTATION.
     data_ref_test(  ).
   ENDMETHOD.
 
-  METHOD data_test.
-    LOOP AT flights INTO DATA(flight).
-      IF flight-carrier_id = `SQ`.
-        flight-price += 35.
-        modify table flights from flight.
-      ENDIF.
-    ENDLOOP.
-  ENDMETHOD.
-
-  METHOD field_symbols_test.
-    LOOP AT flights ASSIGNING FIELD-SYMBOL(<flight>).
-      IF <flight>-carrier_id = `SQ`.
-        <flight>-price += 35.
-      ENDIF.
-    ENDLOOP.
-  ENDMETHOD.
 
   METHOD data_ref_test.
     LOOP AT flights REFERENCE INTO DATA(flight).
@@ -52,4 +38,22 @@ CLASS zcl_fs_ref_perf_testing IMPLEMENTATION.
     ENDLOOP.
   ENDMETHOD.
 
+
+  METHOD data_test.
+    LOOP AT flights INTO DATA(flight).
+      IF flight-carrier_id = `SQ`.
+        flight-price += 35.
+        modify table flights from flight.
+      ENDIF.
+    ENDLOOP.
+  ENDMETHOD.
+
+
+  METHOD field_symbols_test.
+    LOOP AT flights ASSIGNING FIELD-SYMBOL(<flight>).
+      IF <flight>-carrier_id = `SQ`.
+        <flight>-price += 35.
+      ENDIF.
+    ENDLOOP.
+  ENDMETHOD.
 ENDCLASS.
