@@ -11,7 +11,7 @@ CLASS zcl_oo_tutorial_5 DEFINITION
         price    TYPE /dmo/flight_price,
         currency TYPE /dmo/currency_code,
       END OF cost .
-
+   DATA nested TYPE zcl_simple_example=>example_table_type.
     "! <p class="shorttext synchronized" lang="en">CONSTRUCTOR</p>
     METHODS constructor
       IMPORTING
@@ -37,7 +37,7 @@ CLASS zcl_oo_tutorial_5 DEFINITION
   PRIVATE SECTION.
     DATA flight TYPE /dmo/flight.
     DATA obj3 TYPE REF TO zcl_oo_tutorial_3.
-    DATA nested TYPE zcl_simple_example=>example_table_type.
+    "DATA nested TYPE zcl_simple_example=>example_table_type.
 
 ENDCLASS.
 
@@ -87,10 +87,9 @@ CLASS zcl_oo_tutorial_5 IMPLEMENTATION.
         carrid   = carrier_id ).
     ELSE.
       me->obj3 = NEW zcl_oo_tutorial_3(
-  carrier_id    = flight-carrier_id
-  connection_id = flight-connection_id
-  flight_date   = flight-flight_date ).
-
+        carrier_id    = flight-carrier_id
+        connection_id = flight-connection_id
+        flight_date   = flight-flight_date ).
     ENDIF.
   ENDMETHOD.
 
