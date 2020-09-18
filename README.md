@@ -1,5 +1,7 @@
 # ABAP Object Oriented Basics 2019
 
+[![REUSE status](https://api.reuse.software/badge/github.com/SAP-samples/abap-oo-basics)](https://api.reuse.software/info/github.com/SAP-samples/abap-oo-basics)
+
 ## Description
 This is an update to the 10 year old ABAP Object Oriented eLearning series.  What started as an update to improve the video resolution also turned into modernizing the tooling and ABAP syntax used to teach the basic Object Oriented concepts.
 Here is the YouTube Playlist that goes along with this code sample:
