@@ -5,33 +5,33 @@
 ## Description
 This is an update to the 10 year old ABAP Object Oriented eLearning series.  What started as an update to improve the video resolution also turned into modernizing the tooling and ABAP syntax used to teach the basic Object Oriented concepts.
 Here is the YouTube Playlist that goes along with this code sample:
-https://www.youtube.com/playlist?list=PLoc6uc3ML1JT55KwLJVe1QXnsP9emoJG2
+https://youtube.com/playlist?list=PL6RpkC85SLQB-vyEFpUj1xkrIhH4UiV4D
 
-ABAP OO 2019 Part 1 - Introduction
+ABAP OO Part 1 - Introduction
 
-[![](http://img.youtube.com/vi/SMk9dy9IfME/0.jpg)](http://www.youtube.com/watch?v=SMk9dy9IfME "ABAP OO 2019 Part 1 - Introduction")
+[![](http://img.youtube.com/vi/SMk9dy9IfME/0.jpg)](https://youtu.be/GUh7QyCwxGk "ABAP OO Part 1 - Introduction")
 
-ABAP OO 2019 Part 2 - Static vs. Instance
+ABAP OO Part 2 - Static vs. Instance
 
-[![](http://img.youtube.com/vi/Kq6L3pdXAp0/0.jpg)](http://www.youtube.com/watch?v=Kq6L3pdXAp0 "ABAP OO 2019 Part 2 - Static vs. Instance")
+[![](http://img.youtube.com/vi/Kq6L3pdXAp0/0.jpg)](https://youtu.be/SwqNRez4itg "ABAP OO Part 2 - Static vs. Instance")
 
-ABAP OO 2019 Part 3 - Visibility
+ABAP OO Part 3 - Visibility
 
-[![](http://img.youtube.com/vi/JGCNWGhxyIA/0.jpg)](http://www.youtube.com/watch?v=JGCNWGhxyIA "ABAP OO 2019 Part 3 - Visibility")
+[![](http://img.youtube.com/vi/JGCNWGhxyIA/0.jpg)](https://youtu.be/A9IPfLJBV5w "ABAP OO Part 3 - Visibility")
 
-ABAP OO 2019 Part 4 - Exceptions
+ABAP OO Part 4 - Exceptions
 
-[![](http://img.youtube.com/vi/1YX1mveqXj4/0.jpg)](http://www.youtube.com/watch?v=1YX1mveqXj4 "ABAP OO 2019 Part 4 - Exceptions")
+[![](http://img.youtube.com/vi/1YX1mveqXj4/0.jpg)](https://youtu.be/2p4SJpYv7uQ "ABAP OO Part 4 - Exceptions")
 
-ABAP OO 2019 Part 5 - Inheritance
+ABAP OO Part 5 - Inheritance
 
-[![](http://img.youtube.com/vi/bqxqGTzQ5sM/0.jpg)](http://www.youtube.com/watch?v=bqxqGTzQ5sM "ABAP OO 2019 Part 5 - Inheritance")
+[![](http://img.youtube.com/vi/bqxqGTzQ5sM/0.jpg)](https://youtu.be/zlp0CHaeSfw "ABAP OO Part 5 - Inheritance")
 
 ## Requirements
 Make sure to fulfill the following requirements:
-* You have access to an SAP Cloud Platform ABAP Environment instance (see [here](https://blogs.sap.com/2018/09/04/sap-cloud-platform-abap-environment) for additional information).
+* You have access to an SAP BTP, ABAP Environment instance (see [here](https://blogs.sap.com/2018/09/04/sap-cloud-platform-abap-environment) for additional information).
 * You have downloaded and installed ABAP Development Tools (ADT). Make sure to use the most recent version as indicated on the [installation page](https://tools.hana.ondemand.com/#abap). 
-* You have created an ABAP Cloud Project in ADT that allows you to access your SAP Cloud Platform ABAP Environment instance (see [here](https://help.sap.com/viewer/5371047f1273405bb46725a417f95433/Cloud/en-US/99cc54393e4c4e77a5b7f05567d4d14c.html) for additional information). Your log-on language is English.
+* You have created an ABAP Cloud Project in ADT that allows you to access your SAP BTP, ABAP Environment instance (see [here](https://help.sap.com/viewer/5371047f1273405bb46725a417f95433/Cloud/en-US/99cc54393e4c4e77a5b7f05567d4d14c.html) for additional information). Your log-on language is English.
 * You have installed the [abapGit](https://github.com/abapGit/eclipse.abapgit.org) plug-in for ADT from the update site `http://eclipse.abapgit.org/updatesite/`.
 
 ## Download and Installation
@@ -51,7 +51,7 @@ To activate all development objects from this sample:
 2. In the dialog that appears, select all development objects in the transport request (that you created for the demo content installation) and choose `Activate`.
 
 ## Known Issues
-In the ABAP Trial on SAP Cloud Platform you sharing an ABAP instance with many other users. Only one user on this system may import this sample as all object names must be globally unique. If you receive an error that the objects already exists upon import, search the system for classes named ZCL_OO_TUTORIAL*.  Someone has already imported the content in your trial system and you can simply start with that imported version. 
+In the ABAP Trial on SAP Business Technology Platform you sharing an ABAP instance with many other users. Only one user on this system may import this sample as all object names must be globally unique. If you receive an error that the objects already exists upon import, search the system for classes named ZCL_OO_TUTORIAL*.  Someone has already imported the content in your trial system and you can simply start with that imported version. 
 
 ## How to obtain support
 This project is provided "as-is": there is no guarantee that raised issues will be answered or addressed in future releases.
