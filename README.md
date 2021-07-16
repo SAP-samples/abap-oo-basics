@@ -9,23 +9,23 @@ https://youtube.com/playlist?list=PL6RpkC85SLQB-vyEFpUj1xkrIhH4UiV4D
 
 ABAP OO Part 1 - Introduction
 
-[![](http://img.youtube.com/vi/SMk9dy9IfME/0.jpg)](https://youtu.be/GUh7QyCwxGk "ABAP OO Part 1 - Introduction")
+[![](http://img.youtube.com/vi/GUh7QyCwxGk/0.jpg)](https://youtu.be/GUh7QyCwxGk "ABAP OO Part 1 - Introduction")
 
 ABAP OO Part 2 - Static vs. Instance
 
-[![](http://img.youtube.com/vi/Kq6L3pdXAp0/0.jpg)](https://youtu.be/SwqNRez4itg "ABAP OO Part 2 - Static vs. Instance")
+[![](http://img.youtube.com/vi/SwqNRez4itg/0.jpg)](https://youtu.be/SwqNRez4itg "ABAP OO Part 2 - Static vs. Instance")
 
 ABAP OO Part 3 - Visibility
 
-[![](http://img.youtube.com/vi/JGCNWGhxyIA/0.jpg)](https://youtu.be/A9IPfLJBV5w "ABAP OO Part 3 - Visibility")
+[![](http://img.youtube.com/vi/A9IPfLJBV5w/0.jpg)](https://youtu.be/A9IPfLJBV5w "ABAP OO Part 3 - Visibility")
 
 ABAP OO Part 4 - Exceptions
 
-[![](http://img.youtube.com/vi/1YX1mveqXj4/0.jpg)](https://youtu.be/2p4SJpYv7uQ "ABAP OO Part 4 - Exceptions")
+[![](http://img.youtube.com/vi/2p4SJpYv7uQ/0.jpg)](https://youtu.be/2p4SJpYv7uQ "ABAP OO Part 4 - Exceptions")
 
 ABAP OO Part 5 - Inheritance
 
-[![](http://img.youtube.com/vi/bqxqGTzQ5sM/0.jpg)](https://youtu.be/zlp0CHaeSfw "ABAP OO Part 5 - Inheritance")
+[![](http://img.youtube.com/vi/zlp0CHaeSfw/0.jpg)](https://youtu.be/zlp0CHaeSfw "ABAP OO Part 5 - Inheritance")
 
 ## Requirements
 Make sure to fulfill the following requirements:
