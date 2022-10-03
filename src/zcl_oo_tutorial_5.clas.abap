@@ -43,7 +43,7 @@ ENDCLASS.
 
 
 
-CLASS zcl_oo_tutorial_5 IMPLEMENTATION.
+CLASS ZCL_OO_TUTORIAL_5 IMPLEMENTATION.
 
 
   METHOD calculate_flight_price.
@@ -54,7 +54,7 @@ CLASS zcl_oo_tutorial_5 IMPLEMENTATION.
     CASE me->flight-plane_type_id.
       WHEN '747-400'.
         price-price =  price-price + 40.
-      WHEN 'A310-300'.
+      WHEN `A321-200`.
         price-price =  price-price + 25.
       WHEN OTHERS.
         price-price =  price-price + 10.

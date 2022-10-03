@@ -47,7 +47,7 @@ CLASS ZCL_OO_TUTORIAL_2 IMPLEMENTATION.
     CASE PLANE_TYPE.
       WHEN `747-400`.
         PRICE = PRICE + 40.
-      WHEN `A310-300`.
+      WHEN `A321-200`.
         PRICE = PRICE + 25.
       WHEN OTHERS.
         PRICE = PRICE + 10.
@@ -72,32 +72,32 @@ CLASS ZCL_OO_TUTORIAL_2 IMPLEMENTATION.
       EXPORTING
         CARRIER_ID    = `AA`
         CONNECTION_ID = `0017`
-        FLIGHT_DATE   = `20190530`
+        FLIGHT_DATE   = `20230222`
       IMPORTING
         PRICE         = DATA(PRICE)
         CURRENCY_CODE = DATA(CURRENCY_CODE) ).
-    OUT->WRITE( |Flight Price for AA-0017 on {  CONV /DMO/FLIGHT_DATE( `20190530` ) DATE = ENVIRONMENT }: | &&
+    OUT->WRITE( |Flight Price for AA-0017 on {  CONV /DMO/FLIGHT_DATE( `20230222` ) DATE = ENVIRONMENT }: | &&
                 |{ PRICE CURRENCY = CURRENCY_CODE } { CURRENCY_CODE }| ).
 
     ME->CALCULATE_FLIGHT_PRICE(
       EXPORTING
         CARRIER_ID    = `UA`
-        CONNECTION_ID = `0017`
-        FLIGHT_DATE   = `20190530`
+        CONNECTION_ID = `0058`
+        FLIGHT_DATE   = `20220426`
       IMPORTING
         PRICE         = DATA(PRICE_BAD)
         CURRENCY_CODE = DATA(CURRENCY_CODE_BAD) ).
-    OUT->WRITE( |Flight Price for UA-0017 on {  CONV /DMO/FLIGHT_DATE( `20190530` ) DATE = ENVIRONMENT }: | &&
+    OUT->WRITE( |Flight Price for UA-0058 on {  CONV /DMO/FLIGHT_DATE( `20220426` ) DATE = ENVIRONMENT }: | &&
                 |{ PRICE_BAD CURRENCY = CURRENCY_CODE_BAD } { CURRENCY_CODE_BAD }| ).
 
     OUT->WRITE( ME->GET_FLIGHT_DETAILS(
                   CARRIER_ID    = `AA`
                   CONNECTION_ID = `0017`
-                  FLIGHT_DATE   = `20190530` ) ).
+                  FLIGHT_DATE   = `20230222` ) ).
 
     OUT->WRITE( ME->GET_FLIGHT_DETAILS(
                   CARRIER_ID    = `UA`
-                  CONNECTION_ID = `0017`
-                  FLIGHT_DATE   = `20190530` ) ).
+                  CONNECTION_ID = `0058`
+                  FLIGHT_DATE   = `20220426` ) ).
   ENDMETHOD.
 ENDCLASS.

@@ -1,12 +1,10 @@
-"! <p class="shorttext synchronized" lang="en">Flight Data as Instance Methods</p>
-CLASS zcl_oo_tutorial_3 DEFINITION
+CLASS zcl_2_instance DEFINITION
   PUBLIC
   FINAL
   CREATE PUBLIC .
 
   PUBLIC SECTION.
-    INTERFACES if_serializable_object.
-    "! <p class="shorttext synchronized" lang="en">Flight</p>
+   "! <p class="shorttext synchronized" lang="en">Flight</p>
     DATA flight TYPE /dmo/flight.
 
     "! <p class="shorttext synchronized" lang="en">CONSTRUCTOR</p>
@@ -31,8 +29,7 @@ ENDCLASS.
 
 
 
-CLASS ZCL_OO_TUTORIAL_3 IMPLEMENTATION.
-
+CLASS zcl_2_instance IMPLEMENTATION.
 
   METHOD calculate_flight_price.
 

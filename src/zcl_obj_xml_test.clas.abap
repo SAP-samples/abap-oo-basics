@@ -11,7 +11,7 @@ ENDCLASS.
 
 
 
-CLASS zcl_obj_xml_test IMPLEMENTATION.
+CLASS ZCL_OBJ_XML_TEST IMPLEMENTATION.
 
 
   METHOD if_http_service_extension~handle_request.

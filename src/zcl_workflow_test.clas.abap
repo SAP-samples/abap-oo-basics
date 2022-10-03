@@ -11,7 +11,8 @@ ENDCLASS.
 
 
 
-CLASS zcl_workflow_test IMPLEMENTATION.
+CLASS ZCL_WORKFLOW_TEST IMPLEMENTATION.
+
 
   METHOD if_oo_adt_classrun~main.
     TYPES: BEGIN OF ty_context,

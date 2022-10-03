@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_CLAS" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOCLASS>
+    <CLSNAME>ZCL_5_COMPOSITE_BASE</CLSNAME>
+    <LANGU>E</LANGU>
+    <DESCRIPT>Composite Pattern Abstract Base Class</DESCRIPT>
+    <STATE>1</STATE>
+    <CLSCCINCL>X</CLSCCINCL>
+    <FIXPT>X</FIXPT>
+    <UNICODE>X</UNICODE>
+   </VSEOCLASS>
+   <DESCRIPTIONS>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_5_COMPOSITE_BASE</CLSNAME>
+     <CMPNAME>CLASS_BASE_NAME</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Base Class Name</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_5_COMPOSITE_BASE</CLSNAME>
+     <CMPNAME>CLASS_OTHER</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Class Name Other</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_5_COMPOSITE_BASE</CLSNAME>
+     <CMPNAME>CONSTRUCTOR</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>CONSTRUCTOR</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_5_COMPOSITE_BASE</CLSNAME>
+     <CMPNAME>FACTORY</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Get Filght Object</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_5_COMPOSITE_BASE</CLSNAME>
+     <CMPNAME>FLIGHT</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Flight</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_5_COMPOSITE_BASE</CLSNAME>
+     <CMPNAME>PLANE_TYPE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Plane Type Enumerator</DESCRIPT>
+    </SEOCOMPOTX>
+   </DESCRIPTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

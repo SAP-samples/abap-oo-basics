@@ -11,7 +11,9 @@ ENDCLASS.
 
 
 
-CLASS zcl_abap_to_json_restore IMPLEMENTATION.
+CLASS ZCL_ABAP_TO_JSON_RESTORE IMPLEMENTATION.
+
+
   METHOD if_oo_adt_classrun~main.
 
     SELECT SINGLE * FROM zobject_xml
@@ -21,5 +23,4 @@ CLASS zcl_abap_to_json_restore IMPLEMENTATION.
                         RESULT flight = context2.
     out->write( context2->get_flight_details(  ) ).
   ENDMETHOD.
-
 ENDCLASS.
