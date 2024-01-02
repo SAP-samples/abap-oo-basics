@@ -30,7 +30,7 @@ CLASS ZCL_OO_TUTORIAL_1 IMPLEMENTATION.
 
 
   METHOD if_oo_adt_classrun~main.
-    out->write( `Starting OO #1 Test`).
+    out->write( `Starting OO #1 Test` ).
     out->write( me->my_first_method( `Input Value` ) ).
   ENDMETHOD.
 
