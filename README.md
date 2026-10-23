@@ -1,4 +1,4 @@
-# ABAP Object Oriented Basics 2019
+# ABAP Object Oriented Basics
 
 [![REUSE status](https://api.reuse.software/badge/github.com/SAP-samples/abap-oo-basics)](https://api.reuse.software/info/github.com/SAP-samples/abap-oo-basics)
 
@@ -32,7 +32,7 @@ ABAP OO Part 5 - Inheritance
 
 Make sure to fulfill the following requirements:
 
-* You have access to an SAP BTP, ABAP Environment instance (see [here](https://blogs.sap.com/2018/09/04/sap-cloud-platform-abap-environment) for additional information).
+* You have access to an SAP BTP, ABAP Environment instance (see the [Create an SAP BTP ABAP Environment Trial User](https://developers.sap.com/tutorials/abap-environment-trial-onboarding.html) tutorial for additional information).
 * You have downloaded and installed ABAP Development Tools (ADT). Make sure to use the most recent version as indicated on the [installation page](https://tools.hana.ondemand.com/#abap).
 * You have created an ABAP Cloud Project in ADT that allows you to access your SAP BTP, ABAP Environment instance (see [here](https://help.sap.com/viewer/5371047f1273405bb46725a417f95433/Cloud/en-US/99cc54393e4c4e77a5b7f05567d4d14c.html) for additional information). Your log-on language is English.
 * You have installed the [abapGit](https://github.com/abapGit/eclipse.abapgit.org) plug-in for ADT from the update site `http://eclipse.abapgit.org/updatesite/`.
@@ -62,7 +62,9 @@ In the ABAP Trial on SAP Business Technology Platform you sharing an ABAP instan
 
 ## How to obtain support
 
-This project is provided "as-is": there is no guarantee that raised issues will be answered or addressed in future releases.
+[Create an issue](https://github.com/SAP-samples/abap-oo-basics/issues) in this repository if you find a bug or have questions about the content.
+
+For additional support, [ask a question in SAP Community](https://community.sap.com/).
 
 ## License
 
